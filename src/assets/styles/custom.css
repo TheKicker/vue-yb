@@ -1,0 +1,27 @@
+#nav {
+    background-color: #708090;
+
+}
+
+#footer {
+    font-family: 'Open Sans', Arial, sans-serif;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    padding: 96px;
+    background-color: #708090;
+    color: #111111;
+}
+
+#footerImage
+{
+
+}
+
+.btn {
+    margin-left: 3px;
+    margin-right: 3px;
+}
+
+div.btn a {
+    color: #fff;
+}
