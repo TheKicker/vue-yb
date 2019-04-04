@@ -43,7 +43,7 @@
         methods: {
             read() {
                 // let url = 'https://cavlemasters.com/api/movies/' + this.id + '/rentals';
-                let url = 'https://cloudflare.tech/api/movies/' + this.id + '/rentals';
+                let url = 'https://codeflare.tech/api/movies/' + this.id + '/rentals';
                 window.axios.get(url).then(({data}) => {
                     this.title = data[0].title;
                     console.log(this.title);

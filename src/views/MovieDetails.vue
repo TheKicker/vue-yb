@@ -13,17 +13,16 @@
             </div>
         </div>
 
-    </div>
 </template>
 <script>
   function Movie ({ id, title, description, rating, length, onDVD, onBluRay }) {
-    this.id = parseInt(id);
-    this.title = title;
-    this.description = description;
-    this.rating = rating;
-    this.length = length;
-    this.onDVD = onDVD;
-    this.onBluRay = onBluRay;
+    this.id = parseInt(id)
+    this.title = title
+    this.description = description
+    this.rating = rating
+    this.length = length
+    this.onDVD = onDVD
+    this.onBluRay = onBluRay
   }
   export default {
     data () {
@@ -34,7 +33,7 @@
     },
     methods: {
       read () {
-          let url = 'https://cloudflare.tech/api/movies/' + this.id;
+          let url = 'https://codeflare.tech/api/movies/' + this.id;
           // let url = 'https://cavlemasters.com/api/movies/' + this.id;
         window.axios.get(url).then(({ data }) => {
           this.movie = data;
@@ -45,7 +44,7 @@
         /* Build URL for image */
         imageUrl: function () {
             // return "https://cavlemasters.com/api/movies_" + this.movie.id + ".jpg";
-            return "https://cloudflare.tech/api/movies_" + this.movie.id + ".jpg";
+            return "http://codeflare.tech/images/movie_" + this.movie.id + ".jpg";
         }
     },
     components: {

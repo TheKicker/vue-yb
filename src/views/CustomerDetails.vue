@@ -14,11 +14,11 @@
 </template>
 <script>
   function Customer ({ id, name, email, isAdmin, updated_at }) {
-    this.id = parseInt(id);
-    this.name = name;
-    this.email = email;
-    this.isAdmin = isAdmin;
-    this.updated_at = updated_at;
+    this.id = parseInt(id)
+    this.name = name
+    this.email = email
+    this.isAdmin = isAdmin
+    this.updated_at = updated_at
   }
   export default {
     data () {

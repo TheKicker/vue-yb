@@ -18,7 +18,7 @@ routes: [
 },
 
 {
-    path: '/movies',
+    path: '/',
     name: 'movies',
 // route level code-splitting
 // this generates a separate chunk (customers.[hash].js) for this route

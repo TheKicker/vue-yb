@@ -33,8 +33,8 @@ export default {
     computed:{
         /* Build URL for image */
         imageUrl: function(){
-            return   "https://cloudflare.tech/api/movies_" + this.id + ".jpg";
-            // return   "https://cavlemasters.com/api/movies_" + this.id + ".jpg";
+            return   "http://codeflare.tech/images/movie_" + this.id + ".jpg";
+            // return   "https://cavlemasters.com/api/movie_" + this.id + ".jpg";
         },
     },
     props: ['id', 'title', 'rating', 'length', 'onDVD', 'onBluRay']
