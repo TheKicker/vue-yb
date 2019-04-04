@@ -1,8 +1,8 @@
 <template>
-    <div class="about pt-4 pb-3">
-        <h1>Yellow Box Customers</h1>
+    <div class="container">
+        <h1>Yellow Bucket Customers</h1>
 
-        <table class="table table-striped">
+        <table class="table">
             <thead>
             <tr>
                 <th>Name</th>

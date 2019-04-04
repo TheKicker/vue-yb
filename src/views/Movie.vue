@@ -1,7 +1,7 @@
 <template>
 <div class="container">
   <div class="content">
-    <h1>Yellow Box Movies</h1>
+    <h1>Welcome to Yellow Bucket</h1>
     <div class="row">
     <movie-component
             v-for="(movie, index) in movies"
