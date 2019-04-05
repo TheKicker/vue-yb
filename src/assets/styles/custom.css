@@ -85,3 +85,32 @@ tr:hover{
     padding: 96px;
 
 }
+
+.navBarImages{
+    height: 3.5rem;
+    width: 3.5rem;
+    margin: 3rem;
+}
+.navBarTitle{
+    color: #ffff99;
+
+}
+
+.cardMovie{
+    width: 20rem;
+    margin: 1.5rem;
+    background-color: white;
+    outline-width: 3px;
+    outline-color: black;
+    box-shadow: 8px 8px 12px #708090;
+}
+
+#button1{
+    margin: 1.5rem;
+}
+#button2{
+    margin: 1.5rem;
+}
+.card-body{
+    height: 7rem;
+}

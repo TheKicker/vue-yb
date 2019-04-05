@@ -1,16 +1,17 @@
 <template>
-    <div class="card" style="width: 18rem">
+    <div align="center">
+    <div class="cardMovie">
     <img :src="this.imageUrl" class="card-img-top">
     <div class="card-body">
-        <h3 class="card-title"> {{ title }} </h3>
-        <h4 class="card-text"> {{ rating }} </h4>
-        <h4 class="card-text"> Length: {{ length }} </h4>
+        <h3 class="card-title" align="center"><strong> {{ title }} </strong></h3>
+        <h5 class="card-text" align="center"> <i>{{ rating }}</i><strong>&nbsp;&nbsp;|&nbsp;</strong><i>{{ length }} min</i></h5>
     </div>
     <div class="card-links">
-        <button class="btn btn-sm btn-success"><router-link :to="'/movie-details/' + this.id">Details</router-link></button>
-        <button class="btn btn-sm btn-dark"><router-link :to="'/movie-details/' + this.id + '/rented'">Rentals</router-link></button>
+        <button id="button1" class="btn btn-md btn-success"><router-link :to="'/movie-details/' + this.id">Details</router-link></button>
+        <button id="button2" class="btn btn-md btn-dark"><router-link :to="'/movie-details/' + this.id + '/rented'">Rentals</router-link></button>
     </div>
-</div>
+    </div>
+    </div>
 </template>
 
 <script>

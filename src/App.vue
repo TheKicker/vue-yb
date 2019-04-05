@@ -1,9 +1,14 @@
 <template>
   <div id="app">
     <div id="nav">
-      <router-link to="/">Movies</router-link> |
-      <router-link to="/about">About</router-link> |
-      <router-link to="/customers">Customers</router-link>
+      <div>
+        <h2 class="navBarTitle"> Welcome to Yellow Bucket</h2>
+      </div>
+      <div>
+      <router-link to="/"><img class="navBarImages" src="../public/movie_icon.png"></router-link>
+      <router-link to="/about"><img class="navBarImages" src="../public/about_icon.png"></router-link>
+      <router-link to="/customers"><img class="navBarImages" src="../public/customers_icon.png"></router-link>
+      </div>
     </div>
     <div id="greeting">
      <h4> Here is a reactive greeting from Page 7 in the book that doesnt work...</h4>
