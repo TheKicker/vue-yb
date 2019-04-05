@@ -1,6 +1,5 @@
 <template>
-  <div class="home pt-4 pb-3">
-    <build-component msg="Welcome to Yellow Bucket"/>
+  <div class="pt-4 pb-3">
 
     <h1>Yellow Box Customers</h1>
 
