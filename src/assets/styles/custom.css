@@ -100,9 +100,9 @@ tr:hover{
     width: 20rem;
     margin: 1.5rem;
     background-color: white;
-    outline-width: 3px;
+    outline-width: 5px;
     outline-color: black;
-    box-shadow: 8px 8px 12px #708090;
+    box-shadow: 8px 8px 15px #708090;
 }
 
 #button1{
