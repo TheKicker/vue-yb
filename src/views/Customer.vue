@@ -22,6 +22,7 @@
             ></customer-component>
             </tbody>
         </table>
+        <div id="spacer"></div>
     </div>
 </template>
 <script>

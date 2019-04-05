@@ -1,6 +1,5 @@
 #nav {
     background-color: #708090;
-
 }
 
 #footer {
@@ -67,4 +66,22 @@ tr:hover{
 
 .btn.a{
     color: white;
+}
+
+#greeting{
+    background-color: #ffff99;
+    color: black;
+    padding: 10px;
+    font-family: 'Open Sans', Arial, sans-serif;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+.row{
+
+}
+#spacer
+{
+    background-color: #e5e5e5;
+    padding: 96px;
+
 }

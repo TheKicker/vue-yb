@@ -5,9 +5,26 @@
       <router-link to="/about">About</router-link> |
       <router-link to="/customers">Customers</router-link>
     </div>
+    <div id="greeting">
+     <h4> Here is a reactive greeting from Page 7 in the book that doesnt work...</h4>
+      <!--<h2 v-if="hours < 12">Good Morning! Find something good to watch!</h2>-->
+      <!--<h2 v-if="hours >= 12 && hours < 18">Good Afternoon! Check out our great movies!</h2>-->
+      <!--<h2 v-if="hours >= 18">We're up late, eh? Always time for a good flick!</h2>-->
+    </div>
     <router-view/>
   </div>
 </template>
+
+<script>
+  // Page 7 in the book, yet it doesnt work LOL
+  //
+  // new Vue({
+  //   el: '#app',
+  //   data: {
+  //     hours : new Date().getHours()
+  //   }
+  // })
+</script>
 
 <style lang="scss">
   /* Add Google Font */
@@ -24,9 +41,10 @@
     color: #2c3e50;
   }
   #nav {
-    padding: 30px;
+    padding: 48px;
     a {
       font-weight: bold;
+      font-size: medium;
       color: #233140;
       &.router-link-exact-active {
         color: #ffff99;
