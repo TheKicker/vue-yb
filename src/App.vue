@@ -16,14 +16,14 @@
 </template>
 
 <script>
-  // Page 7 in the book, yet it doesnt work LOL
-  //
-  // new Vue({
-  //   el: '#app',
-  //   data: {
-  //     hours : new Date().getHours()
-  //   }
-  // })
+// Page 7 in the book, yet it doesnt work LOL
+//
+// new Vue({
+//   el: '#app',
+//   data: {
+//     hours : new Date().getHours()
+//   }
+// })
 </script>
 
 <style lang="scss">

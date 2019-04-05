@@ -13,48 +13,48 @@
     </div>
 </template>
 <script>
-  function Customer ({ id, name, email, isAdmin, updated_at }) {
-    this.id = parseInt(id)
-    this.name = name
-    this.email = email
-    this.isAdmin = isAdmin
-    this.updated_at = updated_at
-  }
-  export default {
-    data () {
-      return {
-        id: null,
-        customer: Object
-      }
-    },
-    methods: {
-      read () {
-          let url = 'https://codeflare.tech/api/customers/' + this.id;
-        // let url = 'https://cavlemasters.com/api/users/' + this.id;
-        window.axios.get(url).then(({ data }) => {
-          this.customer = data;
-        })
-      }
-    },
-    computed: {
-      /* using the isAdmin, return a text role */
-      role: function () {
-            return this.customer.isAdmin ? 'Administrator' : 'Customer';
-      },
-      /* MAke a pretty date for showing last_update */
-      updated: function(){
-        var options = { weekday: 'long', year: 'numeric', month: 'long', day: 'numeric', hour: 'numeric', minute: 'numeric' };
-        var today  = new Date(this.customer.updated_at);
-        return today.toLocaleString("en-US", options);
-      }
-    },
-    components: {
-    },
-    created () {
-      this.id = this.$route.params.userId;
-      this.read()
+function Customer ({ id, name, email, isAdmin, updated_at }) {
+  this.id = parseInt(id)
+  this.name = name
+  this.email = email
+  this.isAdmin = isAdmin
+  this.updated_at = updated_at
+}
+export default {
+  data () {
+    return {
+      id: null,
+      customer: Object
     }
+  },
+  methods: {
+    read () {
+      let url = 'https://codeflare.tech/api/customers/' + this.id
+      // let url = 'https://cavlemasters.com/api/users/' + this.id;
+      window.axios.get(url).then(({ data }) => {
+        this.customer = data
+      })
+    }
+  },
+  computed: {
+    /* using the isAdmin, return a text role */
+    role: function () {
+      return this.customer.isAdmin ? 'Administrator' : 'Customer'
+    },
+    /* MAke a pretty date for showing last_update */
+    updated: function () {
+      var options = { weekday: 'long', year: 'numeric', month: 'long', day: 'numeric', hour: 'numeric', minute: 'numeric' }
+      var today = new Date(this.customer.updated_at)
+      return today.toLocaleString('en-US', options)
+    }
+  },
+  components: {
+  },
+  created () {
+    this.id = this.$route.params.userId
+    this.read()
   }
+}
 </script>
 
 <style>

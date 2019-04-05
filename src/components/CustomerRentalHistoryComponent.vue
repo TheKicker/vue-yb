@@ -11,32 +11,32 @@
 
 <script>
 export default {
-    data () {
-      return {}
+  data () {
+    return {}
+  },
+  methods: {
+  },
+  computed: {
+    /* Build URL for image */
+    imageUrl: function () {
+      return 'https://cloudflare.tech/api/movie_' + this.transaction.movie_id + '.jpg'
+      // return   "https://cavlemasters.com/api/movie_" + this.transaction.movie_id + ".jpg";
     },
-    methods: {
+    /* Make a pretty date for showing last_update */
+    rented: function () {
+      var options = { year: 'numeric', month: 'short', day: 'numeric', hour: 'numeric', minute: 'numeric' }
+      var day = new Date(this.transaction.rent_date)
+      return day.toLocaleString('en-US', options)
     },
-    computed: {
-        /* Build URL for image */
-        imageUrl: function(){
-            return   "https://cloudflare.tech/api/movie_" + this.transaction.movie_id + ".jpg";
-            // return   "https://cavlemasters.com/api/movie_" + this.transaction.movie_id + ".jpg";
-        },
-        /* Make a pretty date for showing last_update */
-        rented: function(){
-            var options = { year: 'numeric', month: 'short', day: 'numeric', hour: 'numeric', minute: 'numeric' };
-            var day  = new Date(this.transaction.rent_date);
-            return day.toLocaleString("en-US", options);
-        },
-        /* Make a pretty date for showing last_update */
-        returned: function(){
-            if (this.transaction.return_date == null) return null;
-            var options = {year: 'numeric', month: 'short', day: 'numeric', hour: 'numeric', minute: 'numeric' };
-            var day  = new Date(this.transaction.return_date);
-            return day.toLocaleString("en-US", options);
-        }
-    },
-    props: ['id', 'title', 'rating', 'length', 'transaction']
+    /* Make a pretty date for showing last_update */
+    returned: function () {
+      if (this.transaction.return_date == null) return null
+      var options = { year: 'numeric', month: 'short', day: 'numeric', hour: 'numeric', minute: 'numeric' }
+      var day = new Date(this.transaction.return_date)
+      return day.toLocaleString('en-US', options)
+    }
+  },
+  props: ['id', 'title', 'rating', 'length', 'transaction']
 }
 </script>
 

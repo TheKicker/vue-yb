@@ -13,22 +13,22 @@
 
 <script>
 export default {
-    data () {
-      return {}
+  data () {
+    return {}
+  },
+  methods: {
+    view () {
+      // this.$emit('view', this.id);
+      console.log('Component Viewing id:' + this.id)
+      // this.$router.push({ name: 'customer-details', params: { id: 3 } })
+      let myRoute = '/customer-details/3'
+      this.$router.push(myRoute)
     },
-    methods: {
-      view () {
-        // this.$emit('view', this.id);
-        console.log('Component Viewing id:' + this.id)
-        // this.$router.push({ name: 'customer-details', params: { id: 3 } })
-        let myRoute = '/customer-details/3';
-        this.$router.push(myRoute);
-      },
-      rentals () {
-        this.$emit('rentals', this.id);
-      }
-    },
-    props: ['id', 'name', 'email', 'isAdmin', 'updated_at']
+    rentals () {
+      this.$emit('rentals', this.id)
+    }
+  },
+  props: ['id', 'name', 'email', 'isAdmin', 'updated_at']
 }
 </script>
 

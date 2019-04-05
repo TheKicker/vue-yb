@@ -10,27 +10,27 @@
 
 <script>
 export default {
-    data () {
-      return {}
+  data () {
+    return {}
+  },
+  methods: {
+  },
+  computed: {
+    /* Make a pretty date for showing last_update */
+    rented: function () {
+      var options = { year: 'numeric', month: 'short', day: 'numeric', hour: 'numeric', minute: 'numeric' }
+      var day = new Date(this.transaction.rent_date)
+      return day.toLocaleString('en-US', options)
     },
-    methods: {
-    },
-    computed: {
-        /* Make a pretty date for showing last_update */
-        rented: function(){
-            var options = { year: 'numeric', month: 'short', day: 'numeric', hour: 'numeric', minute: 'numeric' };
-            var day  = new Date(this.transaction.rent_date);
-            return day.toLocaleString("en-US", options);
-        },
-        /* Make a pretty date for showing last_update */
-        returned: function(){
-            if (this.transaction.return_date == null) return null;
-            var options = {year: 'numeric', month: 'short', day: 'numeric', hour: 'numeric', minute: 'numeric' };
-            var day  = new Date(this.transaction.return_date);
-            return day.toLocaleString("en-US", options);
-        }
-    },
-    props: ['id', 'name', 'email', 'transaction']
+    /* Make a pretty date for showing last_update */
+    returned: function () {
+      if (this.transaction.return_date == null) return null
+      var options = { year: 'numeric', month: 'short', day: 'numeric', hour: 'numeric', minute: 'numeric' }
+      var day = new Date(this.transaction.return_date)
+      return day.toLocaleString('en-US', options)
+    }
+  },
+  props: ['id', 'name', 'email', 'transaction']
 }
 </script>
 

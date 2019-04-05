@@ -26,45 +26,45 @@
     </div>
 </template>
 <script>
-    function Rental({id, title, rating, length, pivot}) {
-        this.id = parseInt(pivot.id);
-        this.title = title;
-        this.rating = rating;
-        this.length = length;
-        this.transaction = pivot;
+import MovieRentalComponent from '@/components/CustomerRentalHistoryComponent.vue'
+function Rental ({ id, title, rating, length, pivot }) {
+  this.id = parseInt(pivot.id)
+  this.title = title
+  this.rating = rating
+  this.length = length
+  this.transaction = pivot
+}
+export default {
+  data () {
+    return {
+      id: null,
+      customer_name: '',
+      rentals: []
     }
-    import MovieRentalComponent from '@/components/CustomerRentalHistoryComponent.vue'
-    export default {
-        data() {
-            return {
-                id: null,
-                customer_name: '',
-                rentals: []
-            }
-        },
-        methods: {
-            read() {
-                let url = 'https://codeflare.tech/api/customers/' + this.id + '/rentals';
-                // let url = 'https://cavlemasters.com/api/users' + this.id + '/rentals';
-                window.axios.get(url).then(({data}) => {
-                    this.customer_name = data[0].name;
-                    console.log(this.customer_name);
-                    console.log(data[0]);
-                    data[0].rentals.forEach(rental => {
-                        console.log(rental.pivot);
-                        this.rentals.push(new Rental(rental))
-                    })
-                })
-            }
-        },
-        components: {
-            MovieRentalComponent
-        },
-        created() {
-            this.id = this.$route.params.userId;
-            this.read()
-        }
+  },
+  methods: {
+    read () {
+      let url = 'https://codeflare.tech/api/customers/' + this.id + '/rentals'
+      // let url = 'https://cavlemasters.com/api/users' + this.id + '/rentals';
+      window.axios.get(url).then(({ data }) => {
+        this.customer_name = data[0].name
+        console.log(this.customer_name)
+        console.log(data[0])
+        data[0].rentals.forEach(rental => {
+          console.log(rental.pivot)
+          this.rentals.push(new Rental(rental))
+        })
+      })
     }
+  },
+  components: {
+    MovieRentalComponent
+  },
+  created () {
+    this.id = this.$route.params.userId
+    this.read()
+  }
+}
 </script>
 
 <style scoped lang="scss">

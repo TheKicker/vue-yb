@@ -26,47 +26,45 @@
     </div>
 </template>
 <script>
-  function Customer ({ id, name, email, isAdmin, updated_at }) {
-    this.id = parseInt(id);
-    this.name = name;
-    this.email = email;
-    this.isAdmin = isAdmin;
-    this.updated_at = updated_at;
-  }
-  /* Go get the code for the customer-component tag that is in the template */
-  import CustomerComponent from '@/components/CustomerComponent.vue'
-  export default {
-    data () {
-      return {
-        customers: []
-      }
+/* Go get the code for the customer-component tag that is in the template */
+import CustomerComponent from '@/components/CustomerComponent.vue'
+function Customer ({ id, name, email, isAdmin, updated_at }) {
+  this.id = parseInt(id)
+  this.name = name
+  this.email = email
+  this.isAdmin = isAdmin
+  this.updated_at = updated_at
+}
+export default {
+  data () {
+    return {
+      customers: []
+    }
+  },
+  methods: {
+    read () {
+      this.customers = []
+      // window.axios.get('https://cavlemasters/api/customers').then(({ data }) => {
+      window.axios.get('https://codeflare.tech/api/customers').then(({ data }) => {
+        data.forEach(customer => {
+          this.customers.push(new Customer(customer))
+        })
+      })
     },
-      methods: {
-          read () {
-              this.customers = []
-              // window.axios.get('https://cavlemasters/api/customers').then(({ data }) => {
-              window.axios.get('https://codeflare.tech/api/customers').then(({ data }) => {
-                  data.forEach(customer => {
-                      this.customers.push(new Customer(customer))
-                  })
-              })
-          },
-          view (id) {
-          },
-          rentals (id) {
-          }
-      },
-      components: {
-          CustomerComponent
-      },
-      created () {
-          this.read()
-      }
+    view (id) {
+    },
+    rentals (id) {
+    }
+  },
+  components: {
+    CustomerComponent
+  },
+  created () {
+    this.read()
   }
+}
 </script>
 
 <style>
-
-
 
 </style>

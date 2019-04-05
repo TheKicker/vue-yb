@@ -15,29 +15,29 @@
 
 <script>
 export default {
-    data () {
-      return {}
+  data () {
+    return {}
+  },
+  methods: {
+    view () {
+      // this.$emit('view', this.id);
+      console.log('Component Viewing id:' + this.id)
+      // this.$router.push({ name: 'customer-details', params: { id: 3 } })
+      let myRoute = '/movie-details/3'
+      this.$router.push(myRoute)
     },
-    methods: {
-      view () {
-        // this.$emit('view', this.id);
-        console.log('Component Viewing id:' + this.id)
-        // this.$router.push({ name: 'customer-details', params: { id: 3 } })
-        let myRoute = '/movie-details/3';
-        this.$router.push(myRoute);
-      },
-      rentals () {
-        this.$emit('rentals', this.id);
-      }
-    },
-    computed:{
-        /* Build URL for image */
-        imageUrl: function(){
-            return   "http://codeflare.tech/images/movie_" + this.id + ".jpg";
-            // return   "https://cavlemasters.com/api/movie_" + this.id + ".jpg";
-        },
-    },
-    props: ['id', 'title', 'rating', 'length', 'onDVD', 'onBluRay']
+    rentals () {
+      this.$emit('rentals', this.id)
+    }
+  },
+  computed: {
+    /* Build URL for image */
+    imageUrl: function () {
+      return 'http://codeflare.tech/images/movie_' + this.id + '.jpg'
+      // return   "https://cavlemasters.com/api/movie_" + this.id + ".jpg";
+    }
+  },
+  props: ['id', 'title', 'rating', 'length', 'onDVD', 'onBluRay']
 }
 </script>
 

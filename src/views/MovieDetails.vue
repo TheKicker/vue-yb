@@ -15,45 +15,45 @@
 
 </template>
 <script>
-  function Movie ({ id, title, description, rating, length, onDVD, onBluRay }) {
-    this.id = parseInt(id)
-    this.title = title
-    this.description = description
-    this.rating = rating
-    this.length = length
-    this.onDVD = onDVD
-    this.onBluRay = onBluRay
-  }
-  export default {
-    data () {
-      return {
-        id: null,
-        movie: Object
-      }
-    },
-    methods: {
-      read () {
-          let url = 'https://codeflare.tech/api/movies/' + this.id;
-          // let url = 'https://cavlemasters.com/api/movies/' + this.id;
-        window.axios.get(url).then(({ data }) => {
-          this.movie = data;
-        })
-      }
-    },
-    computed: {
-        /* Build URL for image */
-        imageUrl: function () {
-            // return "https://cavlemasters.com/api/movies_" + this.movie.id + ".jpg";
-            return "http://codeflare.tech/images/movie_" + this.movie.id + ".jpg";
-        }
-    },
-    components: {
-    },
-    created () {
-      this.id = this.$route.params.userId;
-      this.read()
+function Movie ({ id, title, description, rating, length, onDVD, onBluRay }) {
+  this.id = parseInt(id)
+  this.title = title
+  this.description = description
+  this.rating = rating
+  this.length = length
+  this.onDVD = onDVD
+  this.onBluRay = onBluRay
+}
+export default {
+  data () {
+    return {
+      id: null,
+      movie: Object
     }
+  },
+  methods: {
+    read () {
+      let url = 'https://codeflare.tech/api/movies/' + this.id
+      // let url = 'https://cavlemasters.com/api/movies/' + this.id;
+      window.axios.get(url).then(({ data }) => {
+        this.movie = data
+      })
+    }
+  },
+  computed: {
+    /* Build URL for image */
+    imageUrl: function () {
+      // return "https://cavlemasters.com/api/movies_" + this.movie.id + ".jpg";
+      return 'http://codeflare.tech/images/movie_' + this.movie.id + '.jpg'
+    }
+  },
+  components: {
+  },
+  created () {
+    this.id = this.$route.params.userId
+    this.read()
   }
+}
 </script>
 
 <style>
