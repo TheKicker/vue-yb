@@ -6,7 +6,7 @@
     font-family: 'Open Sans', Arial, sans-serif;
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
-    height: 450px;
+    height: 350px;
     padding: 64px;
     background-color: #708090;
     color: #233140;
@@ -85,11 +85,14 @@ tr:hover{
     padding: 96px;
 
 }
+#spacer2{
+    margin-left: 48px;
+}
 
 .navBarImages{
     height: 3.5rem;
     width: 3.5rem;
-    margin: 3rem;
+    margin: 10px;
 }
 .navBarTitle{
     color: #ffff99;
@@ -102,7 +105,8 @@ tr:hover{
     background-color: white;
     outline-width: 5px;
     outline-color: black;
-    box-shadow: 8px 8px 15px #708090;
+    box-shadow: 10px 10px 20px #708090;
+    border-radius: 25px;
 }
 
 #button1{
@@ -113,4 +117,15 @@ tr:hover{
 }
 .card-body{
     height: 7rem;
+}
+.thumbnailDetails{
+    height: 25%;
+    width: 50%;
+    margin-left: 25%;
+    margin-right: 25%;
+}
+.detailsTextBox
+{
+    margin: 4rem;
+
 }

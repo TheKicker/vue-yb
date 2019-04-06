@@ -1,7 +1,7 @@
 <template>
     <div align="center">
     <div class="cardMovie">
-    <img :src="this.imageUrl" class="card-img-top">
+    <img :src="this.imageUrl" class="card-img-top" style="border-radius: 25px;">
     <div class="card-body">
         <h3 class="card-title" align="center"><strong> {{ title }} </strong></h3>
         <h5 class="card-text" align="center"> <i>{{ rating }}</i><strong>&nbsp;&nbsp;|&nbsp;</strong><i>{{ length }} min</i></h5>

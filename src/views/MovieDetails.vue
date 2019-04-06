@@ -1,15 +1,18 @@
 <template>
     <div class="pt-4 pb-3">
-        <h3>Movie Details</h3>
-        <div class="card" style="width: 50%;">
+        <!--<h3> {{ movie.title }}</h3>-->
+        <div class="cardMovie" style="width: 40%;" align="center">
             <img class="card-body">
-                <img :src="this.imageUrl" class="thumbnail">
-                <h5 class="card-title">{{movie.title}} - {{ movie.id }}</h5>
-                <p class="card-text">Description: {{ movie.description }}</p>
-                <p class="card-text">Rating: {{ movie.rating }}</p>
-                <p class="card-text">Length: {{ movie.length }}</p>
-                <p class="card-text">Available on DVD: {{ movie.onDVD }}</p>
-                <p class="card-text">Available on BluRay: {{ movie.onBluRay }}</p>
+            <h5 class="card-title">{{movie.title }} </h5>
+                <img :src="this.imageUrl" class="thumbnailDetails" align="center">
+                <div class="detailsTextBox">
+                    <p class="card-text"> Movie ID #{{movie.id}}</p>
+                    <p class="card-text">Description: {{ movie.description }}</p>
+                    <p class="card-text">Rating: {{ movie.rating }}</p>
+                    <p class="card-text">Length: {{ movie.length }}</p>
+                    <p class="card-text">Available on DVD: {{ movie.onDVD }}</p>
+                    <p class="card-text">Available on BluRay: {{ movie.onBluRay }}</p>
+                </div>
             </div>
         </div>
 

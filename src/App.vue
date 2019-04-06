@@ -1,13 +1,14 @@
 <template>
   <div id="app">
     <div id="nav">
-      <div>
+      <div class="row">
         <h2 class="navBarTitle"> Welcome to Yellow Bucket</h2>
-      </div>
-      <div>
-      <router-link to="/"><img class="navBarImages" src="../public/movie_icon.png"></router-link>
-      <router-link to="/about"><img class="navBarImages" src="../public/about_icon.png"></router-link>
-      <router-link to="/customers"><img class="navBarImages" src="../public/customers_icon.png"></router-link>
+        <div>
+          <div id="spacer2"></div>
+          <router-link to="/"><img class="navBarImages" src="../public/MediaIcon.png"></router-link>
+          <router-link to="/about"><img class="navBarImages" src="../public/AboutIcon.png"></router-link>
+          <router-link to="/customers"><img class="navBarImages" src="../public/CustomerIcon.png"></router-link>
+        </div>
       </div>
     </div>
     <div id="greeting">
