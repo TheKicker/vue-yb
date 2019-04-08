@@ -1,14 +1,16 @@
 <template>
     <div class="pt-4 pb-3">
-        <h3>Customer Details</h3>
-        <div class="card" style="width: 50%;">
-            <div class="card-body">
-                <h5 class="card-title">{{customer.name}} - {{ customer.id }}</h5>
-                <h6 class="card-subtitle mb-2 text-muted">{{this.role}}</h6>
-                <p class="card-text">Email: {{ customer.email }}</p>
-                <p class="card-text">Last Update: {{ this.updated }}</p>
+        <h2 class="Htext2">Customer Details</h2>
+        <div class="card" style="width: 80%; height: 20rem;">
+            <div class="card-body" style="padding: 3rem;">
+                <h4 class="card-title customerName"><strong>{{customer.name}} - {{ customer.id }}</strong></h4>
+                <h5 class="card-subtitle mb-2 text-muted"><i>{{this.role}}</i></h5>
+                <hr>
+                <h6 class="card-text"><strong>Email:</strong> {{ customer.email }}</h6>
+                <h6 class="card-text"><strong>Last Update:</strong> {{ this.updated }}</h6>
             </div>
         </div>
+        <div id="spacer"></div>
 
     </div>
 </template>

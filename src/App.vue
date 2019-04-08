@@ -2,9 +2,8 @@
   <div id="app">
     <div id="nav">
       <div class="row">
-        <h2 class="navBarTitle"> Welcome to Yellow Bucket</h2>
-        <div>
-          <div id="spacer2"></div>
+        <h2 class="navBarTitle" style="padding: 1rem;"><strong>Yellow Bucket</strong></h2>
+        <div id="spacer2">
           <router-link to="/"><img class="navBarImages" src="../public/MediaIcon.png"></router-link>
           <router-link to="/about"><img class="navBarImages" src="../public/AboutIcon.png"></router-link>
           <router-link to="/customers"><img class="navBarImages" src="../public/CustomerIcon.png"></router-link>

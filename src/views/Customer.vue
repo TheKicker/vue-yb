@@ -1,6 +1,6 @@
 <template>
     <div class="container">
-        <h1>List of YB Customers</h1>
+        <h1 class="Htext">List of YB Customers</h1>
 
         <table class="table">
             <thead>

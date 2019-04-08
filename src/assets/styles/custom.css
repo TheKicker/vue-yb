@@ -11,6 +11,7 @@
     background-color: #708090;
     color: #233140;
     width: 100%;
+    text-shadow: 2px 1px 3px #ffff99;
 }
 
 #footerImage
@@ -86,13 +87,13 @@ tr:hover{
 
 }
 #spacer2{
-    margin-left: 48px;
+    margin-left: 2rem;
 }
 
 .navBarImages{
-    height: 3.5rem;
-    width: 3.5rem;
-    margin: 10px;
+    height: 4.5rem;
+    width: 4.5rem;
+    margin: 1rem;
 }
 .navBarTitle{
     color: #ffff99;
@@ -111,12 +112,16 @@ tr:hover{
 
 #button1{
     margin: 1.5rem;
+    border-radius: 15px;
 }
 #button2{
     margin: 1.5rem;
+    border-radius: 15px;
+}
+#button2.a{
 }
 .card-body{
-    height: 7rem;
+    height: 8rem;
 }
 .thumbnailDetails{
     height: 25%;
@@ -128,4 +133,30 @@ tr:hover{
 {
     margin: 4rem;
 
+}
+.Htext{
+    margin-top: 2.5rem;
+    color: #233140;
+    font-weight: bold;
+    font-family: 'Open Sans', Arial, sans-serif;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    text-shadow: 3px 3px 3px #ffff99;
+}
+.customerName{
+    color: #233140;
+    font-weight: bold;
+    font-family: 'Open Sans', Arial, sans-serif;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    text-shadow: 3px 3px 3px #ffff99;
+}
+.Htext2{
+    color: #233140;
+    font-weight: bold;
+    font-family: 'Open Sans', Arial, sans-serif;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    text-shadow: 3px 3px 3px #ffff99;
+    margin-bottom: 2rem;
 }
