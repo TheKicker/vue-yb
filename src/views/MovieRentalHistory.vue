@@ -2,7 +2,7 @@
     <div class="about pt-4 pb-3">
         <h1>Movie Rentals</h1>
 
-        <table class="table table-striped">
+        <table class="table">
             <thead>
             <tr>
                 <th>Name</th>
@@ -13,6 +13,7 @@
             </tr>
             </thead>
             <tbody>
+
             <movie-rental-history-component
                     v-for="(customer, index) in customers"
                     v-bind="customer"

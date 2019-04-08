@@ -1,5 +1,5 @@
 <template>
-    <div class="pt-4 pb-3">
+    <div class="pt-4 pb-3" >
         <!--<h3> {{ movie.title }}</h3>-->
         <div class="cardMovie" style="width: 40%;" align="center">
             <img class="card-body">

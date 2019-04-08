@@ -55,11 +55,13 @@ a {
 
 .table{
     background-color: white;
-    margin-bottom: 96px;
 }
 
 th {
     background-color: #708090;
+}
+tr{
+    background-color: white;
 }
 tr:hover{
     background-color: #ffff99;
@@ -97,6 +99,7 @@ tr:hover{
 }
 .navBarTitle{
     color: #ffff99;
+    text-shadow: 2px 2px 3px black;
 
 }
 
@@ -106,7 +109,7 @@ tr:hover{
     background-color: white;
     outline-width: 5px;
     outline-color: black;
-    box-shadow: 10px 10px 20px #708090;
+    box-shadow: 12px 12px 20px #708090;
     border-radius: 25px;
 }
 
