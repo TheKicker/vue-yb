@@ -1,5 +1,6 @@
 <template>
 <div class="container">
+  <!--<img id="imgTest" src="http://www.collectspace.com/images/news-032917a-lg.jpg">-->
   <div class="content">
     <h1></h1>
     <div class="row">

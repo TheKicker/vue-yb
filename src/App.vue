@@ -11,24 +11,24 @@
       </div>
     </div>
     <div id="greeting">
-     <h4> Here is a reactive greeting from Page 7 in the book that doesnt work...</h4>
-      <!--<h2 v-if="hours < 12">Good Morning! Find something good to watch!</h2>-->
-      <!--<h2 v-if="hours >= 12 && hours < 18">Good Afternoon! Check out our great movies!</h2>-->
-      <!--<h2 v-if="hours >= 18">We're up late, eh? Always time for a good flick!</h2>-->
+          <!-- Vue.js greeting based on the current time -->
+          <!--<p v-if="hours < 12"> Good Morning, the best way to start your day!</p>-->
+          <!--<p v-if="hours > 12 && hours < 18"> Good Afternoon, lets see what is on!</p>-->
+          <!--<p v-if="hours > 18"> We're up late, no time to sleep!</p>-->
+      <h3> Yolo lol this is weird</h3>
     </div>
     <router-view/>
   </div>
 </template>
 
 <script>
-// Page 7 in the book, yet it doesnt work LOL
-//
-// new Vue({
-//   el: '#app',
-//   data: {
-//     hours : new Date().getHours()
-//   }
-// })
+  // new Vue({
+  //   el: "#greeting",
+  //   data: {
+  //     hours: new Date().getHours()
+  //   }
+  // })
+
 </script>
 
 <style lang="scss">

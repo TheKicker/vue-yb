@@ -18,7 +18,12 @@ window.axios.defaults.headers.common['X-Requested-With'] = 'XMLHttpRequest'
 Vue.config.productionTip = false
 
 new Vue({
+  el: '#app',
   router,
   store,
-  render: h => h(App)
+  render: h => h(App),
+  data: {
+    hours : new Date().getHours()
+  },
+  template: '<h3 v-if="hours >= 18">We\'re up late, eh? Always time for a good flick!</h3>>',
 }).$mount('#app')
