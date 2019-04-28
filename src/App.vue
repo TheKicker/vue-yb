@@ -11,23 +11,13 @@
       </div>
     </div>
     <div id="greeting">
-          <!-- Vue.js greeting based on the current time -->
-          <!--<p v-if="hours < 12"> Good Morning, the best way to start your day!</p>-->
-          <!--<p v-if="hours > 12 && hours < 18"> Good Afternoon, lets see what is on!</p>-->
-          <!--<p v-if="hours > 18"> We're up late, no time to sleep!</p>-->
-      <h3> Yolo lol this is weird</h3>
+      <h3></h3>
     </div>
     <router-view/>
   </div>
 </template>
 
 <script>
-  // new Vue({
-  //   el: "#greeting",
-  //   data: {
-  //     hours: new Date().getHours()
-  //   }
-  // })
 
 </script>
 

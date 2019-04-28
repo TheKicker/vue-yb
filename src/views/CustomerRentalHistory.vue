@@ -1,8 +1,8 @@
 <template>
-    <div class="about pt-4 pb-3">
-        <h1>Customer Rentals</h1>
+    <div class="container pt-4 pb-3">
+        <h2 class="Htext2">Customer Rentals</h2>
 
-        <table class="table table-striped">
+        <table class="table">
             <thead>
             <tr>
                 <th>Title</th>
@@ -23,6 +23,7 @@
 
             </tbody>
         </table>
+        <div id="spacer"></div>
     </div>
 </template>
 <script>

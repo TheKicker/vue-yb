@@ -1,5 +1,5 @@
 <template>
-    <div class="pt-4 pb-3">
+    <div class="container pt-4 pb-3">
         <h2 class="Htext2">Customer Details</h2>
         <div class="card" style="width: 80%; height: 20rem;">
             <div class="card-body" style="padding: 3rem;">

@@ -23,7 +23,6 @@ new Vue({
   store,
   render: h => h(App),
   data: {
-    hours : new Date().getHours()
-  },
-  template: '<h3 v-if="hours >= 18">We\'re up late, eh? Always time for a good flick!</h3>>',
+    hours: new Date().getHours()
+  }
 }).$mount('#app')

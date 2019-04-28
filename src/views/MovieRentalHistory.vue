@@ -1,6 +1,6 @@
 <template>
-    <div class="about pt-4 pb-3">
-        <h1>Movie Rentals</h1>
+    <div class="container pt-4 pb-3">
+        <h2 class="Htext2"> Previous Rentals</h2>
 
         <table class="table">
             <thead>
@@ -23,6 +23,7 @@
 
             </tbody>
         </table>
+    <div id="spacer"></div>
     </div>
 </template>
 <script>

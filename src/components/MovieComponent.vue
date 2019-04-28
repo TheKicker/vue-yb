@@ -1,5 +1,5 @@
 <template>
-    <div align="center">
+    <div>
     <div class="cardMovie">
     <img :src="this.imageUrl" class="card-img-top" style="border-radius: 25px;">
     <div class="card-body">

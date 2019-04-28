@@ -9,9 +9,9 @@
     height: 350px;
     padding: 64px;
     background-color: #708090;
-    color: #233140;
+    color: #ffff99;
     width: 100%;
-    text-shadow: 2px 1px 3px #ffff99;
+    text-shadow: 4px 4px 5px black;
 }
 
 #footerImage
@@ -74,7 +74,7 @@ tr:hover{
 #greeting{
     background-color: #ffff99;
     color: black;
-    padding: 10px;
+    padding: 1rem;
     font-family: 'Open Sans', Arial, sans-serif;
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
@@ -89,7 +89,8 @@ tr:hover{
 
 }
 #spacer2{
-    margin-left: 2rem;
+    margin-left: auto;
+    margin-right: 1rem;
 }
 
 .navBarImages{
@@ -99,7 +100,7 @@ tr:hover{
 }
 .navBarTitle{
     color: #ffff99;
-    text-shadow: 2px 2px 3px black;
+    text-shadow: 3px 3px 4px black;
 
 }
 
@@ -136,6 +137,46 @@ tr:hover{
 {
     margin: 4rem;
 
+}
+
+.movieDetailsTitle
+{
+    margin-top: 2.5rem;
+    margin-bottom: 2rem;
+    color: #233140;
+    font-weight: bold;
+    font-family: 'Open Sans', Arial, sans-serif;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    text-shadow: 3px 3px 3px #ffff99;
+}
+.movieDetailsImage
+{
+    width: 50%;
+
+}
+.movieDetailsTextBox
+{
+    width: 40%;
+    text-align: left;
+    margin-top: auto;
+    margin-bottom: auto;
+    font-family: 'Open Sans', Arial, sans-serif;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+.cardMovieDetails
+{
+    margin-bottom: 3rem;
+    width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 2rem;
+    background-color: white;
+    outline-width: 5px;
+    outline-color: black;
+    box-shadow: 12px 12px 20px #708090;
+    border-radius: 25px;
 }
 .Htext{
     margin-top: 2.5rem;
