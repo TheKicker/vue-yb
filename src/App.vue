@@ -11,7 +11,7 @@
       </div>
     </div>
     <div id="greeting">
-      <h3></h3>
+      <h5><strong></strong></h5>
     </div>
     <router-view/>
   </div>

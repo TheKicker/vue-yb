@@ -11,12 +11,12 @@
                             <p class="card-text"><strong>Movie ID #</strong>000{{movie.id}}</p>
                             <p class="card-text"><strong>Length: </strong>{{movie.length}} &nbsp; | &nbsp; <strong>Rating:</strong> {{movie.rating}}</p>
                             <p class="card-text"><strong>Description: </strong>{{ movie.description }}</p>
-                            <p class="card-text">Available on DVD: {{ movie.onDVD }}</p>
-                            <p class="card-text">Available on BluRay: {{ movie.onBluRay }}</p>
+                            <p class="card-text"><strong> DVD: </strong>{{movie.onDVD}} &nbsp; | &nbsp; <strong>BluRay:</strong> {{movie.onBluRay}}</p>
                         </div>
-                    </div>
+                </div>
+                <div style="height: 5rem;"></div>
             </div>
-
+        <div id="spacer"></div>
     </div>
 
 </template>

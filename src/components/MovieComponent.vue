@@ -7,8 +7,8 @@
         <h5 class="card-text" align="center"> <i>{{ rating }}</i><strong>&nbsp;&nbsp;|&nbsp;</strong><i>{{ length }} min</i></h5>
     </div>
     <div class="card-links">
-        <button id="button1" class="btn btn-md btn-success"><router-link :to="'/movie-details/' + this.id">Details</router-link></button>
-        <button id="button2" class="btn btn-md btn-dark"><router-link :to="'/movie-details/' + this.id + '/rented'">Rentals</router-link></button>
+        <button id="button1" class="btn btn-md btn-success"><router-link :to="'/movie-details/' + this.id" style="color: white">Details</router-link></button>
+        <button id="button2" class="btn btn-md btn-dark"><router-link :to="'/movie-details/' + this.id + '/rented'" style="color: white">Rentals</router-link></button>
     </div>
     </div>
     </div>
