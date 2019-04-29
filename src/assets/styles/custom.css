@@ -111,7 +111,9 @@ tr:hover{
 .navBarTitle{
     color: #ffff99;
     text-shadow: 3px 3px 4px black;
-
+    font-family: 'Open Sans', Arial, sans-serif;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
 }
 
 .cardMovie{
