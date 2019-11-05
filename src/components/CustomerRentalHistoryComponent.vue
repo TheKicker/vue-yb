@@ -17,10 +17,10 @@ export default {
   methods: {
   },
   computed: {
-      /* Build URL for image */
-      imageUrl: function(){
-          return   "http://codeflare.tech/images/movie_" + this.transaction.movie_id + ".jpg";
-      },
+    /* Build URL for image */
+    imageUrl: function () {
+      return 'http://codeflare.tech/images/movie_' + this.transaction.movie_id + '.jpg'
+    },
     /* Make a pretty date for showing last_update */
     rented: function () {
       var options = { year: 'numeric', month: 'short', day: 'numeric', hour: 'numeric', minute: 'numeric' }
