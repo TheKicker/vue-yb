@@ -15,7 +15,7 @@
     </div>
 </template>
 <script>
-function Customer ({ id, name, email, isAdmin, updated_at }) {
+function customer ({ id, name, email, isAdmin, updated_at }) {
   this.id = parseInt(id)
   this.name = name
   this.email = email

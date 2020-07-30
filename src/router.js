@@ -1,7 +1,9 @@
+/* eslint-disable no-tabs */
+/* eslint-disable indent */
 import Vue from 'vue';
 import Router from 'vue-router';
 import Home from './views/Home.vue';
-import CustomerDetails from './views/CustomerDetails';
+import customer-details from './views/CustomerDetails';
 
 Vue.use(Router);
 
