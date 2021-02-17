@@ -3,7 +3,7 @@
 import Vue from 'vue';
 import Router from 'vue-router';
 import Home from './views/Home.vue';
-import customer-details from './views/CustomerDetails';
+import customerdetails from './views/CustomerDetails';
 
 Vue.use(Router);
 
@@ -54,7 +54,7 @@ export default new Router({
 		},
 		{
 			path: '/customer-details/:userId',
-			name: 'customer-details',
+			name: 'customerdetails',
 			// component: CustomerDetails
 			// route level code-splitting
 			// this generates a separate chunk (customers.[hash].js) for this route
